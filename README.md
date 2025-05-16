@@ -14,7 +14,7 @@ Requests should be made for the following datasets:
 
 - **M23 component data**: The component scores for the May 2023 session. This should include 2\,743\,498 observations across 33 variables.
 
-Variable names and their descriptions are provided in the \texttt{A. Data} folder. Once access to the datasets is granted, they should be placed in the same folder as their corresponding description files. To ensure compatibility with the analysis scripts, dataset filenames must match the names of their respective description files.
+Variable names and their descriptions are provided in the [A. Data](A. Data) folder. Once access to the datasets is granted, they should be placed in the same folder as their corresponding description files. To ensure compatibility with the analysis scripts, dataset filenames must match the names of their respective description files.
 
 # Structure
 
