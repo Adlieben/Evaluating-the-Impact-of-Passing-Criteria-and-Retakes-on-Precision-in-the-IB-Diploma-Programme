@@ -19,10 +19,10 @@ Variable names and their descriptions are provided in the [A. Data](A.%20Data) f
 # Structure
 
 The code is organised in several folders:
-- **A. Data**: A folder containing the data used for the study. Currently empty.
-- **B. Preparation**: A folder containing scripts in R used to obtain intermediate results, such as reliabilities and the increment distributions.
-- **C. Main Analysis**: A folder containg scripts in R and Fortran used to obtain the main results concerning precision and passing rates.
-- **D. Results**: A folder containing the results of the analysis. Results are given for each iteration so other plots and summary statistics can be computed.
+- **[A. Data](A.%20Data)**: A folder containing the data used for the study. Currently empty.
+- **[B. Preparation](B.%20Preparation)**: A folder containing scripts in R used to obtain intermediate results, such as reliabilities and the increment distributions.
+- **[C. Main Analysis](C.%20Main Analysis)**: A folder containg scripts in R and Fortran used to obtain the main results concerning precision and passing rates.
+- **[D. Results](D.%20Results)**: A folder containing the results of the analysis. Results are given for each iteration so other plots and summary statistics can be computed.
 - **Final_report.pdf**: The final report that was submitted as a result of this study.
 
 The original structure of the project is maintained with empty folders to facilitate its replication. Once the data files are obtained, they can thus simply be added to the data folder. 
