@@ -12,47 +12,9 @@ As part of the data privacy policy of the IBO, the data used for the project is 
 
 Requests should be made for the following datasets:
 
-**M23 component data**
+- **M23 component data**: The component scores for the May 2023 session. This should include 2\,743\,498 observations across 33 variables.
 
-The component scores for the May 2023 session. This should include 2\,743\,498 observations across 33 variables. These are
-
-\begin{itemize}[noitemsep, topsep=0pt]
-  \item Year
-  \item Month
-  \item Candidate number
-  \item Category of diploma (retake, diploma programme, course programme)
-  \item Assessment type
-  \item Session number
-  \item Paper code
-  \item Subject group number
-  \item Subject and subject option name
-  \item Component
-  \item Language of exam
-  \item Level (SL, HL, TK or EE)
-  \item Exam timezone
-  \item Subject timezone
-  \item Raw component mark
-  \item Moderated component mark
-  \item Scaled component mark
-  \item Component grade
-  \item Subject grade
-  \item Predicted subject grade
-  \item Total subject points
-  \item Marks to next subject grade
-  \item Total IBDP points
-  \item Number of core points
-  \item Passing decision
-  \item Assessment method
-  \item Assessment route
-  \item Gender
-  \item Language 1
-  \item Language 2
-  \item Regional office
-  \item No\_lang\_code
-\end{itemize}
-
-
-Once these datasets have been obtained, these can be placed in the 'A. Data' folder.
+Names and descriptions of variables are provided in the 'A. Data' folder. Once access to datasets has been granted, they can be placed in the same folder as their description. Names should also match so scripts can be ran easily.
 
 # Structure
 
