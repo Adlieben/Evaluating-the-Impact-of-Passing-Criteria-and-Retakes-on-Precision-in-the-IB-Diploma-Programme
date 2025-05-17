@@ -14,7 +14,7 @@ Requests should be made for the following datasets:
 
 - **M23 component data**: The component scores for the May 2023 session. This should include 2\,743\,498 observations across 33 variables.
 - **M23 component grade boundaries**: The component grade boundaries for the May 2023 session. This should include 14\,446 observations across 8 variables.
-- **M23 item data**: The item scores for the May 2023 session. This should include 39\,521\,984 observations across 4 variables. Certain item scores are stored separately by the IB and are given in [A. Data/B. MCQ](A.%20Data/B.%20MCQ) folder.
+- **M23 item data**: The item scores for the May 2023 session. This should include 39\,521\,984 observations across 4 variables. Certain item scores are stored separately by the IB and are given in [A. Data/B. May MCQ](A.%20Data/B.%20May%20MCQ) folder.
 - **M23 subject boundaries**: The subject grade boundaries for the May 2023 session. This should include 2\,887 observations across 5 variables.
 - **Component key**: The key to the randomisation of component names conducted by Maghout to avoid mentioning component names within this open repository.
 - **nl1**: The component scores for components nl373, nl908, nl860 and nl221, whose names are given in the component key. This should include 4 sheets, one per component, with 5\,027 observations across 80 variables,  6\,188 observations across 60 variables, 11\,622 observations across 80 variables and 8\,633 observations across 60 variables respectively.
