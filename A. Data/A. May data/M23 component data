@@ -11,7 +11,7 @@ The 33 variables expected here are:
 - SUBJECT: subject name.
 - SUBJECT_OPTION: subject option name.
 - COMPONENT: component within the subject.
-- LANGUAGE: languagethe component was taken in.
+- LANGUAGE: language the component was taken in.
 - LVL: subject level (SL, HL, TK or EE).
 - EXAM_TIMEZONE: exam timezone of the component.
 - SUBJECT_TIMEZONE: subject timezone, sometimes different to the exam timezone.
@@ -29,7 +29,7 @@ The 33 variables expected here are:
 - ASSESSMENT_METHOD: assessment method of the component (Coursework or exam).
 - EXAMINATION_ROUTE: examination route of the student.
 - GENDER: student gender.
-- LANGUAGE1: First language of instruction for the student.
-- LANGUAGE2: Second language of instruction for the student, if existent. Otherwise, blank.
+- LANGUAGE1: first language of instruction for the student.
+- LANGUAGE2: second language of instruction for the student, if existent. Otherwise, blank.
 - REGIONAL_OFFICE: regional office of the student.
-- NO_LANG_CODE: Paper code without a reference to language.
+- NO_LANG_CODE: paper code without a reference to language.
