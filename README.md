@@ -4,7 +4,7 @@ This is the code used to complete the project 'Evaluating the Impact of Passing 
 
 The study aimed to evaluate the impact of several sets of passing criteria on the precision of the International Baccalaureate Diploma Programme (IBDP). To this end, true and observed scores within a Classical Test Theory (CTT) framework were simulated across 1\,000 iterations. The simulation was done in Fortran, whilst the storage and result manipulation was performed in R. At each iteration, precision, specificity, sensitivity, positive predictive value (PPV) and negative predictive value (NPV) were calculated. These were compared to each other to provide evidence for or against amending the current IB passing criteria.
 
-Further information about the project is given in the full paper included in this folder (Final_report.pdf). For questions regarding the code, please contact Adam Maghout (a.maghout@students.uu.nl) or raise an issue on this repository. This repository is made available via Github to any researcher and will not be taken down.
+Further information about the project is given in the full paper included in this folder ([Final_report](Final_report.pdf). For questions regarding the code, please contact Adam Maghout (a.maghout@students.uu.nl) or raise an issue on this repository. This repository is made available via Github to any researcher and will not be taken down.
 
 # Data
 
@@ -13,6 +13,9 @@ As part of the data privacy policy of the IBO, the data used for the project is 
 Requests should be made for the following datasets:
 
 - **M23 component data**: The component scores for the May 2023 session. This should include 2\,743\,498 observations across 33 variables.
+- **M23 component grade boundaries**: The component grade boundaries for the May 2023 session. This should include 14\,446 observations across 8 variables.
+- **M23 item data**: The item scores for the May 2023 session. This should include 39\,521\,984 observations across 4 variables.
+- **M23 subject boundaries**: The subject grade boundaries for the May 2023 session. This should include 2\,887 observations across 5 variables.
 
 Variable names and their descriptions are provided in the [A. Data](A.%20Data) folder. Once access to the datasets is granted, they should be placed in the same folder as their corresponding description files. To ensure compatibility with the analysis scripts, dataset filenames must match the names of their respective description files.
 
@@ -21,9 +24,9 @@ Variable names and their descriptions are provided in the [A. Data](A.%20Data) f
 The code is organised in several folders:
 - **[A. Data](A.%20Data)**: A folder containing the data used for the study. Currently empty.
 - **[B. Preparation](B.%20Preparation)**: A folder containing scripts in R used to obtain intermediate results, such as reliabilities and the increment distributions.
-- **[C. Main Analysis](C.%20Main Analysis)**: A folder containg scripts in R and Fortran used to obtain the main results concerning precision and passing rates.
+- **[C. Main Analysis](C.%20Main%20Analysis)**: A folder containg scripts in R and Fortran used to obtain the main results concerning precision and passing rates.
 - **[D. Results](D.%20Results)**: A folder containing the results of the analysis. Results are given for each iteration so other plots and summary statistics can be computed.
-- **Final_report.pdf**: The final report that was submitted as a result of this study.
+- **[Final_report](Final_report.pdf)**: The final report that was submitted as a result of this study.
 
 The original structure of the project is maintained with empty folders to facilitate its replication. Once the data files are obtained, they can thus simply be added to the data folder. 
 
