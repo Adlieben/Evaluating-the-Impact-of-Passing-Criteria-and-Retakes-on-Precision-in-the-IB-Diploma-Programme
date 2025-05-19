@@ -70,7 +70,6 @@ sim_wide_0 <- sim_data %>% pivot_wider(names_from = c(test), values_from = MODER
 sim_wide <- sim_wide_0 %>% dplyr::select(-CANDIDATE)
 
 # 1.2 Data CLEANUP November 2023 ----
-# Remove useless column
 data_nov <- data_n
 data_nov <- data_nov[data_nov$CANDIDATE %in% sim_data$CANDIDATE, ] # to maintain complete records
 
