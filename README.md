@@ -10,7 +10,7 @@ Further information about the project is given in the full paper included in thi
 
 The code is organised in several folders:
 - **[A. Data](A.%20Data)**: A folder containing the data used for the study. Currently empty.
-- **[B. Preparation](B.%20Preparation)**: A folder containing scripts in R used to obtain intermediate results, such as reliabilities and the increment distributions.
+- **[B. Preparation](B.%20Preparation)**: A folder containing scripts in R used to obtain intermediate results, namely reliabilities, the increment distributions and original component names.
 - **[C. Main Analysis](C.%20Main%20Analysis)**: A folder containg scripts in R and Fortran used to obtain the main results concerning precision and passing rates.
 - **[D. Results](D.%20Results)**: A folder containing the results of the analysis. Results are given for each iteration so other plots and summary statistics can be computed.
 - **[Final_report](Final_report.pdf)**: The final report that was submitted as a result of this study.
@@ -57,6 +57,16 @@ Datasets corresponding to the November 2023 exam session:
 Variable names and their descriptions are provided in their respective folders. Once access to the datasets is granted, they should be placed in the same folder as their corresponding description files. To ensure compatibility with the analysis scripts, dataset filenames must match the names of their respective description files.
 
 # Step-by-step guide
+
+To reproduce the results in the paper, the following approach must be taken:
+
+1. Place the datasets in their respective folders.
+2. (Optionally) Convert component names to and from their anonymised name in the datasets. This can be done with [Component Recovery.R](B.%20Preparation/Component%20Recovery.R).
+3. Obtain the reliabilities of May components by running [Reliabilities.R](B.%20Preparation/Reliabilities.R).
+4. Obtain the improvement increment distribution from November to May by running [Increment Distribution.R](B.%20Preparation/Increment%20Distribution.R).
+5. Obtain the main results of the analysis concerning precision estimates by running [Simulation.R](C.%20Main%20Analysis/A.%20R/Simulation.R). This will automatically call the [Preparation.R](C.%20Main%20Analysis/A.%20R/Preparation.R) file, as well as all the Fortran scripts given in [B. Fortran](C.%20Main%20Analysis/B.%20Fortran). Since the simulations may take a long time, steps 1, 5, 6 and 7 of the script can also be ran independently, so long as the results are present in [D. Results](D.%20Results). This can also be done without data, as is the case in this open repository.
+
+These steps will yield the same results as presented in the paper. These will appear in [D. Results](D.%20Results).
 
 # License
 
