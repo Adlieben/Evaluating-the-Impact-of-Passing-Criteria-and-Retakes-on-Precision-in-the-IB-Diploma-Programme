@@ -6,21 +6,6 @@ The study aimed to evaluate the impact of several sets of passing criteria on th
 
 Further information about the project is given in the full paper included in this folder ([Final_report](Final_report.pdf)). For questions regarding the code, please contact Adam Maghout (a.maghout@students.uu.nl) or raise an issue on this repository. This repository is made available via Github to any researcher and will not be taken down.
 
-# Data
-
-As part of the data privacy policy of the IBO, the data used for the project is not made available here, although it remains stored in the International Baccalaureate records. Instead, only the code in R and Fortran is provided for use in potential future studies. To request access to the data for reproducibility purposes, please contact Dr. Anton Béguin (anton.beguin@ibo.org), Director of Educational Innovation at the IBO. Requests will be reviewed on a case-by-case basis.
-
-Requests should be made for the following datasets:
-
-- **M23 component data**: The component scores for the May 2023 session. This should include 2\,743\,498 observations across 33 variables.
-- **M23 component grade boundaries**: The component grade boundaries for the May 2023 session. This should include 14\,446 observations across 8 variables.
-- **M23 item data**: The item scores for the May 2023 session. This should include 39\,521\,984 observations across 4 variables. Certain item scores are stored separately by the IB and are given in [A. Data/B. May MCQ](A.%20Data/B.%20May%20MCQ) folder.
-- **M23 subject boundaries**: The subject grade boundaries for the May 2023 session. This should include 2\,887 observations across 5 variables.
-- **Component key**: The key to the randomisation of component names conducted by Maghout to avoid mentioning component names within this open repository.
-- **nl1**: The component scores for components nl373, nl908, nl860 and nl221, whose names are given in the component key. This should include 4 sheets, one per component, with 5\,027 observations across 80 variables,  6\,188 observations across 60 variables, 11\,622 observations across 80 variables and 8\,633 observations across 60 variables respectively.
-
-Variable names and their descriptions are provided in the [A. Data](A.%20Data) folder. Once access to the datasets is granted, they should be placed in the same folder as their corresponding description files. To ensure compatibility with the analysis scripts, dataset filenames must match the names of their respective description files.
-
 # Structure
 
 The code is organised in several folders:
@@ -30,7 +15,42 @@ The code is organised in several folders:
 - **[D. Results](D.%20Results)**: A folder containing the results of the analysis. Results are given for each iteration so other plots and summary statistics can be computed.
 - **[Final_report](Final_report.pdf)**: The final report that was submitted as a result of this study.
 
-The original structure of the project is maintained with empty folders to facilitate its replication. Once the data files are obtained, they can thus simply be added to the data folder. 
+The original structure of the project is maintained with empty folders to facilitate its replication. Once the data files are obtained, they can simply be added to the data folder. 
+
+# Data
+
+As part of the data privacy policy of the IBO, the data used for the project is not made available here, although it remains stored in the International Baccalaureate records. Instead, only the code in R and Fortran is provided for use in potential future studies. To request access to the data for reproducibility purposes, please contact Dr. Anton Béguin (anton.beguin@ibo.org), Director of Educational Innovation at the IBO. Requests will be reviewed on a case-by-case basis.
+
+Requests should be made for the following datasets, that should be placed within the three subfolders in [A. Data](A.%20Data):
+
+- [A. May data](A.%20Data/A.%20May%20data)
+
+Datasets corresponding to the May 2023 exam session:
+
+1. **M23 component data**: The component scores for the May 2023 session. This should include 2\,743\,498 observations across 33 variables.
+2. **M23 component grade boundaries**: The component grade boundaries for the May 2023 session. This should include 14\,446 observations across 8 variables.
+3. **M23 item data**: The item scores for the May 2023 session. This should include 39\,521\,984 observations across 4 variables. Certain item scores are stored separately by the IB and are given in the next subfolder.
+4. **M23 subject boundaries**: The subject grade boundaries for the May 2023 session. This should include 2\,887 observations across 5 variables.
+5. **Component key**: The key to the randomisation of component names conducted by Maghout to avoid mentioning component names within this open repository.
+
+- [B. May MCQ](A.%20Data/B.%20May%20MCQ)
+
+Datasets corresponding to additional item scores from the May 2023 exam session:
+
+1. **nl1**: The item scores for components nl373, nl908, nl860 and nl221, whose names are given in the component key. This should include 4 sheets, one per component, with 5\,027 observations across 80 variables,  6\,188 observations across 60 variables, 11\,622 observations across 80 variables and 8\,633 observations across 60 variables respectively.
+2. **nl2**: The item scores for components nl1007, nl527, nl441 and nl584, whose names are given in the component key. This should include 4 sheets, one per component, with 4\,315 observations across 80 variables, 5\,932 observations across 60 variables,  10\,854 observations across 80 variables, and 6\,907 observations across 60 variables respectively.
+3. **nl3**: The item scores for components nl983, nl177, nl637 and nl830, whose names are given in the component key. This should include 4 sheets, one per component, with 299 observations across 80 variables, 560 observations across 60 variables, 1\,329 observations across 80 variables and 977 observations across 60 variables respectively.
+4. **nl4**: The item scores for components nl208 and nl942, whose names are given in the component key. This should include 2 sheets, one per component, with 1\,331 observations across 80 variables and 4\,032 observations across 60 variables respectively.
+5. **nl79**: The item scores for component nl79. This should include 16\,128 observations of 80 variables.
+6. **nl350**: The item scores for component nl350. This should include 9\,597 observations of 60 variables.
+7. **nl663**: The item scores for component nl663. This should include 15\,429 observations of 80 variables.
+8. **nl914**: The item scores for component nl914. This should include 10\,306 observations of 60 variables.
+
+- [C. November data](A.%20Data/C.%20November%20data)
+
+Datasets corresponding to the November 2023 exam session:
+
+Variable names and their descriptions are provided in the [A. Data](A.%20Data) folder. Once access to the datasets is granted, they should be placed in the same folder as their corresponding description files. To ensure compatibility with the analysis scripts, dataset filenames must match the names of their respective description files.
 
 # Step-by-step guide
 

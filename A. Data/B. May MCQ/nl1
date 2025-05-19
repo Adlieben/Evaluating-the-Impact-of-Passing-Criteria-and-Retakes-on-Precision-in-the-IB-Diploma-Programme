@@ -3,6 +3,12 @@ The four sheets expected are:
 - nl373: the item scores for component nl373.
 - nl908: the item scores for component nl908.
 - nl860: the item scores for component nl860.
-- nl221: the ittem scores for component nl221.
+- nl221: the item scores for component nl221.
 
-Each sheet contains student item scores, with items as columns and students as rows. No additional variables are present.
+Each row of each sheet corresponds to a student.
+
+The first half of the variables represents students' responses to test items. 
+These are labelled Q1 to Q30 for sheets with 60 observations, and Q1 to Q40 for sheets with 80 observations.
+
+The second half contains the corresponding scores for each item.
+These are labelled NQ1 to NQ30 or NQ1 to NQ40, respectively, using the same indexing as the response variables.
