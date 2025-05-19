@@ -73,3 +73,5 @@ These steps will yield the same results as presented in the paper. These will ap
 This work is provided under a GPL-3.0 license. What this entails is provided in [LICENSE](LICENSE).
 
 # Ethical approval
+
+This study was approved by the Ethical Review Board of the Faculty of Social and Behavioural Sciences of Utrecht University (approval code: 24-2025). The full ethical approval is documented in [Ethical Approval.pdf](Ethical%20Approval.pdf).
