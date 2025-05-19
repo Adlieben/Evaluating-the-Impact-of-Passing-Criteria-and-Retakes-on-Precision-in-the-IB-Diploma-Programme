@@ -70,6 +70,6 @@ These steps will yield the same results as presented in the paper. These will ap
 
 # License
 
-This work is provided under a GPL-3.0 license. What this entails is provided in (LICENSE)[LICENSE].
+This work is provided under a GPL-3.0 license. What this entails is provided in [LICENSE](LICENSE).
 
 # Ethical approval
