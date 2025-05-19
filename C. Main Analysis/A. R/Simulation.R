@@ -146,7 +146,7 @@ results_df <- as.data.frame(results_mat)
 names(results_df) <- c("sens","spec","ppv","npv","acc")
 
 # Save results
-write.csv(results_df, "D. Results/B. Main/A. Base/results_base.csv", row.names=FALSE)
+write.csv(results_df, "D. Results/A. Base/results_base.csv", row.names=FALSE)
 
 # Inspect distribution of accuracy:
 ggplot(results_df, aes(x=acc)) +
@@ -277,7 +277,7 @@ print(colMeans(results_mat_rule1))
 results_df_rule1 <- as.data.frame(results_mat_rule1)
 names(results_df_rule1) <- c("sens","spec","ppv","npv","acc")
 
-write.csv(results_df_rule1, "D. Results/B. Main/A. Base/results_rule1.csv", row.names=FALSE)
+write.csv(results_df_rule1, "D. Results/A. Base/results_rule1.csv", row.names=FALSE)
 
 ggplot(results_df_rule1, aes(x=acc)) +
   geom_histogram(bins=25, fill="lightblue", color="black") +
@@ -400,7 +400,7 @@ print(colMeans(results_mat_rule2))
 results_df_rule2 <- as.data.frame(results_mat_rule2)
 names(results_df_rule2) <- c("sens","spec","ppv","npv","acc")
 
-write.csv(results_df_rule2, "D. Results/B. Main/A. Base/results_rule2.csv", row.names=FALSE)
+write.csv(results_df_rule2, "D. Results/A. Base/results_rule2.csv", row.names=FALSE)
 
 ggplot(results_df_rule2, aes(x=acc)) +
   geom_histogram(bins=25, fill="lightblue", color="black") +
@@ -523,7 +523,7 @@ print(colMeans(results_mat_rule3))
 results_df_rule3 <- as.data.frame(results_mat_rule3)
 names(results_df_rule3) <- c("sens","spec","ppv","npv","acc")
 
-write.csv(results_df_rule3, "D. Results/B. Main/A. Base/results_rule3.csv", row.names=FALSE)
+write.csv(results_df_rule3, "D. Results/A. Base/results_rule3.csv", row.names=FALSE)
 
 ggplot(results_df_rule3, aes(x=acc)) +
   geom_histogram(bins=25, fill="lightblue", color="black") +
@@ -645,7 +645,7 @@ print(colMeans(results_mat_rule4))
 results_df_rule4 <- as.data.frame(results_mat_rule4)
 names(results_df_rule4) <- c("sens","spec","ppv","npv","acc")
 
-write.csv(results_df_rule4, "D. Results/B. Main/A. Base/results_rule4.csv", row.names=FALSE)
+write.csv(results_df_rule4, "D. Results/A. Base/results_rule4.csv", row.names=FALSE)
 
 ggplot(results_df_rule4, aes(x=acc)) +
   geom_histogram(bins=25, fill="lightblue", color="black") +
@@ -708,11 +708,11 @@ print(colSums(failReasonsReal_rule5_mat))
 # 3. Check results ----
 
 # 0) Load results back in
-results_mat <- read.csv("D. Results/B. Main/A. Base/results_base.csv")
-results_mat_rule1 <- read.csv("D. Results/B. Main/A. Base/results_rule1.csv")
-results_mat_rule2 <- read.csv("D. Results/B. Main/A. Base/results_rule2.csv")
-results_mat_rule3 <- read.csv("D. Results/B. Main/A. Base/results_rule3.csv")
-results_mat_rule4 <- read.csv("D. Results/B. Main/A. Base/results_rule4.csv")
+results_mat <- read.csv("D. Results/A. Base/results_base.csv")
+results_mat_rule1 <- read.csv("D. Results/A. Base/results_rule1.csv")
+results_mat_rule2 <- read.csv("D. Results/A. Base/results_rule2.csv")
+results_mat_rule3 <- read.csv("D. Results/A. Base/results_rule3.csv")
+results_mat_rule4 <- read.csv("D. Results/A. Base/results_rule4.csv")
 
 # 1) Compute column means for each rule:
 mean_base  <- colMeans(results_mat)
@@ -900,10 +900,10 @@ print("Demographic subgroup retake accuracies over iterations:")
 print(demog_retake)
 
 # Save Base overall metrics
-write.csv(results_overall, file = "D. Results/B. Main/B. Retake/Base_overall.csv", row.names = FALSE)
-write.csv(results_retake, file = "D. Results/B. Main/B. Retake/Base_retake.csv", row.names = FALSE)
-write.csv(demog_normal, file = "D. Results/B. Main/B. Retake/Base_demog_normal.csv", row.names = FALSE)
-write.csv(demog_retake, file = "D. Results/B. Main/B. Retake/Base_demog_retake.csv", row.names = FALSE)
+write.csv(results_overall, file = "D. Results/B. Retake/Base_overall.csv", row.names = FALSE)
+write.csv(results_retake, file = "D. Results/B. Retake/Base_retake.csv", row.names = FALSE)
+write.csv(demog_normal, file = "D. Results/B. Retake/Base_demog_normal.csv", row.names = FALSE)
+write.csv(demog_retake, file = "D. Results/B. Retake/Base_demog_retake.csv", row.names = FALSE)
 ############################
 # 4.2 Rule 1 ----
 ## 4.2.1 Arrays ----
@@ -1059,10 +1059,10 @@ print("Demographic subgroup retake accuracies over iterations:")
 print(demog_retake1)
 
 # Save Rule 1 overall metrics
-write.csv(results_overall1, file = "D. Results/B. Main/B. Retake/Rule1_overall.csv", row.names = FALSE)
-write.csv(results_retake1, file = "D. Results/B. Main/B. Retake/Rule1_retake.csv", row.names = FALSE)
-write.csv(demog_normal1, file = "D. Results/B. Main/B. Retake/Rule1_demog_normal.csv", row.names = FALSE)
-write.csv(demog_retake1, file = "D. Results/B. Main/B. Retake/Rule1_demog_retake.csv", row.names = FALSE)
+write.csv(results_overall1, file = "D. Results/B. Retake/Rule1_overall.csv", row.names = FALSE)
+write.csv(results_retake1, file = "D. Results/B. Retake/Rule1_retake.csv", row.names = FALSE)
+write.csv(demog_normal1, file = "D. Results/B. Retake/Rule1_demog_normal.csv", row.names = FALSE)
+write.csv(demog_retake1, file = "D. Results/B. Retake/Rule1_demog_retake.csv", row.names = FALSE)
 ############################
 # 4.3 Rule 2 ----
 ## 4.3.1 Arrays ----
@@ -1213,16 +1213,16 @@ print(demog_normal2)
 print(demog_retake2)
 
 # Save Rule 2 overall metrics
-write.csv(results_overall2, file = "D. Results/B. Main/B. Retake/Rule2_overall.csv", row.names = FALSE)
+write.csv(results_overall2, file = "D. Results/B. Retake/Rule2_overall.csv", row.names = FALSE)
 
 # Save Rule 2 retake metrics
-write.csv(results_retake2, file = "D. Results/B. Main/B. Retake/Rule2_retake.csv", row.names = FALSE)
+write.csv(results_retake2, file = "D. Results/B. Retake/Rule2_retake.csv", row.names = FALSE)
 
 # Save Rule 2 demographic subgroup normal accuracies
-write.csv(demog_normal2, file = "D. Results/B. Main/B. Retake/Rule2_demog_normal.csv", row.names = FALSE)
+write.csv(demog_normal2, file = "D. Results/B. Retake/Rule2_demog_normal.csv", row.names = FALSE)
 
 # Save Rule 2 demographic subgroup retake accuracies
-write.csv(demog_retake2, file = "D. Results/B. Main/B. Retake/Rule2_demog_retake.csv", row.names = FALSE)
+write.csv(demog_retake2, file = "D. Results/B. Retake/Rule2_demog_retake.csv", row.names = FALSE)
 
 ############################
 # 4.4 Rule 3 ----
@@ -1367,16 +1367,16 @@ print(demog_normal3)
 print(demog_retake3)
 
 # Save Rule 3 overall metrics
-write.csv(results_overall3, file = "D. Results/B. Main/B. Retake/Rule3_overall.csv", row.names = FALSE)
+write.csv(results_overall3, file = "D. Results/B. Retake/Rule3_overall.csv", row.names = FALSE)
 
 # Save Rule 3 retake metrics
-write.csv(results_retake3, file = "D. Results/B. Main/B. Retake/Rule3_retake.csv", row.names = FALSE)
+write.csv(results_retake3, file = "D. Results/B. Retake/Rule3_retake.csv", row.names = FALSE)
 
 # Save Rule 3 demographic subgroup normal accuracies
-write.csv(demog_normal3, file = "D. Results/B. Main/B. Retake/Rule3_demog_normal.csv", row.names = FALSE)
+write.csv(demog_normal3, file = "D. Results/B. Retake/Rule3_demog_normal.csv", row.names = FALSE)
 
 # Save Rule 3 demographic subgroup retake accuracies
-write.csv(demog_retake3, file = "D. Results/B. Main/B. Retake/Rule3_demog_retake.csv", row.names = FALSE)
+write.csv(demog_retake3, file = "D. Results/B. Retake/Rule3_demog_retake.csv", row.names = FALSE)
 ############################
 # 4.5 Rule 4 ----
 ## 4.5.1 Arrays ----
@@ -1519,16 +1519,16 @@ print(demog_normal4)
 # cat("Rule 4 Demographic subgroup retake accuracies:\n")
 print(demog_retake4)
 # Save Rule 4 overall metrics
-write.csv(results_overall4, file = "D. Results/B. Main/B. Retake/Rule4_overall.csv", row.names = FALSE)
+write.csv(results_overall4, file = "D. Results/B. Retake/Rule4_overall.csv", row.names = FALSE)
 
 # Save Rule 4 retake metrics
-write.csv(results_retake4, file = "D. Results/B. Main/B. Retake/Rule4_retake.csv", row.names = FALSE)
+write.csv(results_retake4, file = "D. Results/B. Retake/Rule4_retake.csv", row.names = FALSE)
 
 # Save Rule 4 demographic subgroup normal accuracies
-write.csv(demog_normal4, file = "D. Results/B. Main/B. Retake/Rule4_demog_normal.csv", row.names = FALSE)
+write.csv(demog_normal4, file = "D. Results/B. Retake/Rule4_demog_normal.csv", row.names = FALSE)
 
 # Save Rule 4 demographic subgroup retake accuracies
-write.csv(demog_retake4, file = "D. Results/B. Main/B. Retake/Rule4_demog_retake.csv", row.names = FALSE)
+write.csv(demog_retake4, file = "D. Results/B. Retake/Rule4_demog_retake.csv", row.names = FALSE)
 ############################
 # 4.6 Rule 5 ----
 ## 4.6.1 Arrays ----
@@ -1671,23 +1671,26 @@ print(demog_normal5)
 # cat("Rule 5 Demographic subgroup retake accuracies:\n")
 print(demog_retake5)
 # Save Rule 5 overall metrics
-write.csv(results_overall5, file = "D. Results/B. Main/B. Retake/Rule5_overall.csv", row.names = FALSE)
+write.csv(results_overall5, file = "D. Results/B. Retake/Rule5_overall.csv", row.names = FALSE)
 
 # Save Rule 5 retake metrics
-write.csv(results_retake5, file = "D. Results/B. Main/B. Retake/Rule5_retake.csv", row.names = FALSE)
+write.csv(results_retake5, file = "D. Results/B. Retake/Rule5_retake.csv", row.names = FALSE)
 
 # Save Rule 5 demographic subgroup normal accuracies
-write.csv(demog_normal5, file = "D. Results/B. Main/B. Retake/Rule5_demog_normal.csv", row.names = FALSE)
+write.csv(demog_normal5, file = "D. Results/B. Retake/Rule5_demog_normal.csv", row.names = FALSE)
 
 # Save Rule 5 demographic subgroup retake accuracies
-write.csv(demog_retake5, file = "D. Results/B. Main/B. Retake/Rule5_demog_retake.csv", row.names = FALSE)
+write.csv(demog_retake5, file = "D. Results/B. Retake/Rule5_demog_retake.csv", row.names = FALSE)
 ############################
 # 5. Check results ----
+# Load the libraries again so this can be ran independently
+library(tidyverse)
+library(data.table)
 # 5.1 Base ----
-base_overall <- read.csv("D. Results/B. Main/B. Retake/Base_overall.csv")
-base_retake  <- read.csv("D. Results/B. Main/B. Retake/Base_retake.csv")
-base_demog_normal <- read.csv("D. Results/B. Main/B. Retake/Base_demog_normal.csv")
-base_demog_retake <- read.csv("D. Results/B. Main/B. Retake/Base_demog_retake.csv")
+base_overall <- read.csv("D. Results/B. Retake/Base_overall.csv")
+base_retake  <- read.csv("D. Results/B. Retake/Base_retake.csv")
+base_demog_normal <- read.csv("D. Results/B. Retake/Base_demog_normal.csv")
+base_demog_retake <- read.csv("D. Results/B. Retake/Base_demog_retake.csv")
 
 # cat("==== Base Rule Overall Metrics ====\n")
 print(summary(base_overall))
@@ -1714,10 +1717,10 @@ print(summary(base_demog_retake))
 print(colMeans(base_demog_retake, na.rm = TRUE))
 
 # 5.2 Rule 1 ----
-rule1_overall <- read.csv("D. Results/B. Main/B. Retake/Rule1_overall.csv")
-rule1_retake  <- read.csv("D. Results/B. Main/B. Retake/Rule1_retake.csv")
-rule1_demog_normal <- read.csv("D. Results/B. Main/B. Retake/Rule1_demog_normal.csv")
-rule1_demog_retake <- read.csv("D. Results/B. Main/B. Retake/Rule1_demog_retake.csv")
+rule1_overall <- read.csv("D. Results/B. Retake/Rule1_overall.csv")
+rule1_retake  <- read.csv("D. Results/B. Retake/Rule1_retake.csv")
+rule1_demog_normal <- read.csv("D. Results/B. Retake/Rule1_demog_normal.csv")
+rule1_demog_retake <- read.csv("D. Results/B. Retake/Rule1_demog_retake.csv")
 
 # cat("==== Rule 1 Overall Metrics ====\n")
 print(summary(rule1_overall))
@@ -1744,10 +1747,10 @@ print(summary(rule1_demog_retake))
 print(colMeans(rule1_demog_retake, na.rm = TRUE))
 
 # 5.3 Rule 2 ----
-rule2_overall <- read.csv("D. Results/B. Main/B. Retake/Rule2_overall.csv")
-rule2_retake  <- read.csv("D. Results/B. Main/B. Retake/Rule2_retake.csv")
-rule2_demog_normal <- read.csv("D. Results/B. Main/B. Retake/Rule2_demog_normal.csv")
-rule2_demog_retake <- read.csv("D. Results/B. Main/B. Retake/Rule2_demog_retake.csv")
+rule2_overall <- read.csv("D. Results/B. Retake/Rule2_overall.csv")
+rule2_retake  <- read.csv("D. Results/B. Retake/Rule2_retake.csv")
+rule2_demog_normal <- read.csv("D. Results/B. Retake/Rule2_demog_normal.csv")
+rule2_demog_retake <- read.csv("D. Results/B. Retake/Rule2_demog_retake.csv")
 
 # cat("==== Rule 2 Overall Metrics ====\n")
 print(summary(rule2_overall))
@@ -1773,10 +1776,10 @@ print(summary(rule2_demog_retake))
 # cat("\nMeans (Rule 2 Demographic Retake):\n")
 print(colMeans(rule2_demog_retake, na.rm = TRUE))
 # 5.4 Rule 3 ----
-rule3_overall <- read.csv("D. Results/B. Main/B. Retake/Rule3_overall.csv")
-rule3_retake  <- read.csv("D. Results/B. Main/B. Retake/Rule3_retake.csv")
-rule3_demog_normal <- read.csv("D. Results/B. Main/B. Retake/Rule3_demog_normal.csv")
-rule3_demog_retake <- read.csv("D. Results/B. Main/B. Retake/Rule3_demog_retake.csv")
+rule3_overall <- read.csv("D. Results/B. Retake/Rule3_overall.csv")
+rule3_retake  <- read.csv("D. Results/B. Retake/Rule3_retake.csv")
+rule3_demog_normal <- read.csv("D. Results/B. Retake/Rule3_demog_normal.csv")
+rule3_demog_retake <- read.csv("D. Results/B. Retake/Rule3_demog_retake.csv")
 
 # cat("==== Rule 3 Overall Metrics ====\n")
 print(summary(rule3_overall))
@@ -1804,10 +1807,10 @@ print(colMeans(rule3_demog_retake, na.rm = TRUE))
 
 
 # 5.5 Rule 4 ----
-rule4_overall <- read.csv("D. Results/B. Main/B. Retake/Rule4_overall.csv")
-rule4_retake  <- read.csv("D. Results/B. Main/B. Retake/Rule4_retake.csv")
-rule4_demog_normal <- read.csv("D. Results/B. Main/B. Retake/Rule4_demog_normal.csv")
-rule4_demog_retake <- read.csv("D. Results/B. Main/B. Retake/Rule4_demog_retake.csv")
+rule4_overall <- read.csv("D. Results/B. Retake/Rule4_overall.csv")
+rule4_retake  <- read.csv("D. Results/B. Retake/Rule4_retake.csv")
+rule4_demog_normal <- read.csv("D. Results/B. Retake/Rule4_demog_normal.csv")
+rule4_demog_retake <- read.csv("D. Results/B. Retake/Rule4_demog_retake.csv")
 
 # cat("==== Rule 4 Overall Metrics ====\n")
 print(summary(rule4_overall))
@@ -1834,10 +1837,10 @@ print(summary(rule4_demog_retake))
 print(colMeans(rule4_demog_retake, na.rm = TRUE))
 
 # 5.5 Rule 5 ----
-rule5_overall <- read.csv("D. Results/B. Main/B. Retake/Rule5_overall.csv")
-rule5_retake  <- read.csv("D. Results/B. Main/B. Retake/B. Retake/Rule5_retake.csv")
-rule5_demog_normal <- read.csv("D. Results/B. Main/B. Retake/B. Retake/Rule5_demog_normal.csv")
-rule5_demog_retake <- read.csv("D. Results/B. Main/B. Retake/B. Retake/Rule5_demog_retake.csv")
+rule5_overall <- read.csv("D. Results/B. Retake/Rule5_overall.csv")
+rule5_retake  <- read.csv("D. Results/B. Retake/Rule5_retake.csv")
+rule5_demog_normal <- read.csv("D. Results/B. Retake/Rule5_demog_normal.csv")
+rule5_demog_retake <- read.csv("D. Results/B. Retake/Rule5_demog_retake.csv")
 
 # cat("==== Rule 5 Overall Metrics ====\n")
 print(summary(rule5_overall))
@@ -1864,37 +1867,9 @@ print(summary(rule5_demog_retake))
 print(colMeans(rule5_demog_retake, na.rm = TRUE))
 
 # 6. Figures in article ----
-# Total means
-summary(decision$TOTAL_POINTS)
-sd(decision$TOTAL_POINTS, na.rm = T)
-
-# Means by subject
-grade_groups <- dp_data %>% semi_join(filtered_candidates, by = "CANDIDATE") %>%
-  select(CANDIDATE, GROUP_NO, SUBJECT_OPTION, SUBJECT_GRADE) %>% distinct()
-summary(as.numeric(grade_groups$SUBJECT_GRADE))
-sd(as.numeric(grade_groups$SUBJECT_GRADE), na.rm = T)
-
-# For core subjects
-grade_map <- c("A" = 1, "B" = 2, "C" = 3, "D" = 4, "E" = 5)
-grade_groups <- dp_data %>%
-  semi_join(filtered_candidates, by = "CANDIDATE") %>%
-  select(CANDIDATE, GROUP_NO, SUBJECT_OPTION, SUBJECT_GRADE) %>%
-  distinct() %>%
-  # Keep only letter grades A–E
-  filter(SUBJECT_GRADE %in% names(grade_map)) %>%
-  # Replace letter grades with numeric values
-  mutate(SUBJECT_GRADE_NUM = grade_map[SUBJECT_GRADE])
-summary(grade_groups$SUBJECT_GRADE_NUM)
-
-# Check subject groups
-sub_groups <- dp_data %>% semi_join(filtered_candidates, by = "CANDIDATE") %>%
-  select(CANDIDATE, GROUP_NO, SUBJECT_OPTION) %>% distinct()
-table(sub_groups$GROUP_NO)
-
-
 # 6.1 Numbers ----
 read_metrics <- function(rule, kind) {
-  read_csv(file.path("D. Results/B. Retake/Results", sprintf("%s_%s.csv", rule, kind)),
+  read_csv(file.path("D. Results/B. Retake", sprintf("%s_%s.csv", rule, kind)),
            show_col_types = FALSE)
 }
 
@@ -1917,30 +1892,8 @@ prec_long <- map_dfr(rules, \(r) {
     Stage = factor(Stage, levels = c("Test", "Retake"))
   )
 
-Dem_data <- cbind(Dem_data, Flag = observed_passFlag)[,1:4]
-
-gender_pass <- Dem_data %>%                                     
-  group_by(GENDER) %>%                                          
-  summarise(
-    n_students = n(),
-    prop_pass  = mean(Flag == 1),        # “1” = pass
-    .groups    = "drop"
-  )
-
-print(gender_pass)
-
-office_pass <- Dem_data %>%                                     
-  group_by(REGIONAL_OFFICE) %>%                                 
-  summarise(
-    n_students = n(),
-    prop_pass  = mean(Flag == 1),
-    .groups    = "drop"
-  )
-
-print(office_pass)
-
 # 6.2 Boxplots ----
-ggplot(prec_long, aes(Rule, Precision, fill = Stage)) +
+p <- ggplot(prec_long, aes(Rule, Precision, fill = Stage)) +
   geom_boxplot(position = position_dodge(width = 0.8), outlier.shape = NA) +
   scale_fill_manual(values = c("Test" = "white",
                                "Retake"  = "grey40"), name = "") +
@@ -1949,6 +1902,8 @@ ggplot(prec_long, aes(Rule, Precision, fill = Stage)) +
   theme(panel.grid.major.x = element_blank(),
         panel.grid.minor    = element_blank())
 
+ggsave("D. Results/C. Plot/precision_plot.png",
+       plot = p, width = 8, height = 6, dpi = 300)
 # 6.3 Tables ----
 fmt_scientific <- \(x, digits = 1) formatC(x, format = "e", digits = digits)
 
@@ -1972,28 +1927,6 @@ metrics_after  <- map_dfr(rules, \(r) {
 
 print(metrics_before)   # → table: means (sd) BEFORE retake
 print(metrics_after)    # → table: means (sd) AFTER  retake
-
-read_demog <- function(rule, phase = c("normal", "retake")) {
-  phase <- match.arg(phase)
-  read_csv(
-    file.path("D. Results/B. Main/B. Retake/Results", sprintf("%s_demog_%s.csv", rule, phase)),
-    show_col_types = FALSE
-  )
-}
-fmt_ms <- \(x) sprintf("%.3f (%.1e)", mean(x, na.rm = TRUE), sd(x, na.rm = TRUE))
-
-build_table <- function(phase) {
-  map_dfr(rules, \(r) {
-    read_demog(r, phase) |>
-      summarise(across(starts_with("acc"), fmt_ms)) |>
-      mutate(Rule = pretty_rule(r), .before = 1)
-  })
-}
-
-table_before <- build_table("normal")   # before retake
-table_after  <- build_table("retake")   # after  retake
-print(table_before)
-print(table_after)
 
 # 7. Precision Kelley and observed ----
 rules        <- c("Base", paste0("Rule", 1:5))
@@ -2076,5 +2009,5 @@ precision_tbl <- data.frame(
 print(precision_tbl, row.names = FALSE)
 
 write.csv(precision_tbl,
-          "D. Results/B. Main/C. Other/precision_agreement_Kelley_vs_noKelley.csv",
+          "D. Results/D. Other/precision_agreement_Kelley_vs_noKelley.csv",
           row.names = FALSE)
