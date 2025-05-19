@@ -23,7 +23,7 @@ As part of the data privacy policy of the IBO, the data used for the project is 
 
 Requests should be made for the following datasets, that should be placed within the three subfolders in [A. Data](A.%20Data):
 
-### [A. May data](A.%20Data/A.%20May%20data)
+## [A. May data](A.%20Data/A.%20May%20data)
 
 Datasets corresponding to the May 2023 exam session:
 
@@ -32,6 +32,19 @@ Datasets corresponding to the May 2023 exam session:
 3. **M23 item data**: The item scores for the May 2023 session. This should include 39\,521\,984 observations across 4 variables. Certain item scores are stored separately by the IB and are given in the next subfolder.
 4. **M23 subject boundaries**: The subject grade boundaries for the May 2023 session. This should include 2\,887 observations across 5 variables.
 5. **Component key**: The key to the randomisation of component names conducted by Maghout to avoid mentioning component names within this open repository.
+
+### [B. May MCQ](A.%20Data/B.%20May%20MCQ)
+
+Datasets corresponding to additional item scores from the May 2023 exam session:
+
+1. **nl1**: The item scores for components nl373, nl908, nl860 and nl221, whose names are given in the component key. This should include 4 sheets, one per component, with 5\,027 observations across 80 variables,  6\,188 observations across 60 variables, 11\,622 observations across 80 variables and 8\,633 observations across 60 variables respectively.
+2. **nl2**: The item scores for components nl1007, nl527, nl441 and nl584, whose names are given in the component key. This should include 4 sheets, one per component, with 4\,315 observations across 80 variables, 5\,932 observations across 60 variables,  10\,854 observations across 80 variables, and 6\,907 observations across 60 variables respectively.
+3. **nl3**: The item scores for components nl983, nl177, nl637 and nl830, whose names are given in the component key. This should include 4 sheets, one per component, with 299 observations across 80 variables, 560 observations across 60 variables, 1\,329 observations across 80 variables and 977 observations across 60 variables respectively.
+4. **nl4**: The item scores for components nl208 and nl942, whose names are given in the component key. This should include 2 sheets, one per component, with 1\,331 observations across 80 variables and 4\,032 observations across 60 variables respectively.
+5. **nl79**: The item scores for component nl79. This should include 16\,128 observations of 80 variables.
+6. **nl350**: The item scores for component nl350. This should include 9\,597 observations of 60 variables.
+7. **nl663**: The item scores for component nl663. This should include 15\,429 observations of 80 variables.
+8. **nl914**: The item scores for component nl914. This should include 10\,306 observations of 60 variables.
 
 ### [C. November data](A.%20Data/C.%20November%20data)
 
