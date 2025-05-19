@@ -14,11 +14,11 @@ library(moments) # Skewness and kurtosis
 
 # Read the data
 data <- read.csv('A. Data/A. May Data/M23 component data.csv', header = TRUE, sep=",")
-data_n <- read.csv('A. Data/C. November Data/N23 component Data.csv', header = F)
+data_n <- read.csv('A. Data/C. November Data/N23 component Data.csv')
 Compbounds <- fread('A. Data/A. May Data/M23 component grade boundaries.csv')
 Subbounds <- read.csv('A. Data/A. May Data/M23 subject boundaries.csv')
-Novcompbounds <- fread('A. Data/C. November Data/N23 component grade boundaries.csv')[,-1]
-Novsubbounds <- read.csv('A. Data/C. November Data/N23 subject boundaries.csv')[,-1]
+Novcompbounds <- fread('A. Data/C. November Data/N23 component grade boundaries.csv')
+Novsubbounds <- read.csv('A. Data/C. November Data/N23 subject boundaries.csv')
 Realfailreasons <- fread('D. Results/A. Intermediate/Realfailreasons.csv')[,-1]
 colnames(Realfailreasons)[1] <- 'CANDIDATE'
 
@@ -71,10 +71,7 @@ sim_wide <- sim_wide_0 %>% dplyr::select(-CANDIDATE)
 
 # 1.2 Data CLEANUP November 2023 ----
 # Remove useless column
-data_nov <- data_n[, -c(6,7)]
-
-# Add column names
-colnames(data_nov) <- colnames(data)[1:27]
+data_nov <- data_n
 data_nov <- data_nov[data_nov$CANDIDATE %in% sim_data$CANDIDATE, ] # to maintain complete records
 
 sim_nov <- data_nov %>%
