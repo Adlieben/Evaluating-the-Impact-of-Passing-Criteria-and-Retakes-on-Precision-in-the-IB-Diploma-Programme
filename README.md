@@ -23,7 +23,7 @@ As part of the data privacy policy of the IBO, the data used for the project is 
 
 Requests should be made for the following datasets, that should be placed within the three subfolders in [A. Data](A.%20Data):
 
-## [A. May data](A.%20Data/A.%20May%20data)
+### [A. May data](A.%20Data/A.%20May%20data)
 
 Datasets corresponding to the May 2023 exam session:
 
