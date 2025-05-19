@@ -23,7 +23,7 @@ As part of the data privacy policy of the IBO, the data used for the project is 
 
 Requests should be made for the following datasets, that should be placed within the three subfolders in [A. Data](A.%20Data):
 
-- [A. May data](A.%20Data/A.%20May%20data)
+## [A. May data](A.%20Data/A.%20May%20data)
 
 Datasets corresponding to the May 2023 exam session:
 
@@ -33,7 +33,7 @@ Datasets corresponding to the May 2023 exam session:
 4. **M23 subject boundaries**: The subject grade boundaries for the May 2023 session. This should include 2\,887 observations across 5 variables.
 5. **Component key**: The key to the randomisation of component names conducted by Maghout to avoid mentioning component names within this open repository.
 
-- [B. May MCQ](A.%20Data/B.%20May%20MCQ)
+## [B. May MCQ](A.%20Data/B.%20May%20MCQ)
 
 Datasets corresponding to additional item scores from the May 2023 exam session:
 
@@ -46,7 +46,7 @@ Datasets corresponding to additional item scores from the May 2023 exam session:
 7. **nl663**: The item scores for component nl663. This should include 15\,429 observations of 80 variables.
 8. **nl914**: The item scores for component nl914. This should include 10\,306 observations of 60 variables.
 
-- [C. November data](A.%20Data/C.%20November%20data)
+## [C. November data](A.%20Data/C.%20November%20data)
 
 Datasets corresponding to the November 2023 exam session:
 
