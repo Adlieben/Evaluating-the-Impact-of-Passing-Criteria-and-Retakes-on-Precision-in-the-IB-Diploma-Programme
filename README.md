@@ -13,7 +13,7 @@ The code is organised in several folders:
 - **[B. Preparation](B.%20Preparation)**: A folder containing scripts in R used to obtain intermediate results, namely reliabilities, the increment distributions and original component names.
 - **[C. Main Analysis](C.%20Main%20Analysis)**: A folder containg scripts in R and Fortran used to obtain the main results concerning precision and passing rates.
 - **[D. Results](D.%20Results)**: A folder containing the results of the analysis. Results are given for each iteration so other plots and summary statistics can be computed.
-- **[Final_report](Final_report.pdf)**: The final report that was submitted as a result of this study.
+- **[renv](renv)**: A folder containing the versions of all packages used when this project was conducted.
 
 The original structure of the project is maintained with empty folders to facilitate its replication. Once the data files are obtained, they can simply be added to the data folder. 
 
@@ -67,6 +67,10 @@ To reproduce the results in the paper, the following approach must be taken:
 5. Obtain the main results of the analysis concerning precision estimates by running [Simulation.R](C.%20Main%20Analysis/A.%20R/Simulation.R). This will automatically call the [Preparation.R](C.%20Main%20Analysis/A.%20R/Preparation.R) file, as well as all the Fortran scripts given in [B. Fortran](C.%20Main%20Analysis/B.%20Fortran). Since the simulations may take a long time, steps 5 and 6 of the script can also be ran independently, so long as the results are present in [D. Results](D.%20Results). This can also be done without data, as is the case in this open repository.
 
 These steps will yield the same results as presented in the paper. These will appear in [D. Results](D.%20Results).
+
+# Software
+
+This study used R 4.4.2 and GNU Fortran (GCC) 13.3.0. To recover the exact versions of the R packages used when this study was conducted, run renv::restore() in R or check the [renv](renv) folder.
 
 # License
 
