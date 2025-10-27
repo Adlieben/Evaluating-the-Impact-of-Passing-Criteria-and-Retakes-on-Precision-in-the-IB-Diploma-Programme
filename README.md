@@ -4,7 +4,7 @@ This is the code used to complete the project 'Evaluating the Impact of Passing 
 
 The study aimed to evaluate the impact of several sets of passing criteria on the precision of the International Baccalaureate Diploma Programme (IBDP). To this end, true and observed scores within a Classical Test Theory (CTT) framework were simulated across 1\,000 iterations. The simulation was done in Fortran, whilst the storage and result manipulation was performed in R. At each iteration, precision, specificity, sensitivity, positive predictive value (PPV) and negative predictive value (NPV) were calculated. These were compared to each other to provide evidence for or against amending the current IB passing criteria.
 
-Further information about the project is given in the full paper included in this folder ([Final_report](Final_report.pdf)). For questions regarding the code, please contact Adam Maghout (a.maghout@students.uu.nl) or raise an issue on this repository. This repository is made available via Github to any researcher and will not be taken down.
+Further information about the project is given in the full paper included in this folder ([Final_report](Final_report.pdf)). For questions regarding the code, please contact Adam Maghout (adam.maghout@cito.nl) or raise an issue on this repository. This repository is made available via Github to any researcher and will not be taken down.
 
 # Structure
 
@@ -19,7 +19,7 @@ The original structure of the project is maintained with empty folders to facili
 
 # Data
 
-As part of the data privacy policy of the IBO, the data used for the project is not made available here, although it remains stored in the International Baccalaureate records. Instead, only the code in R and Fortran is provided for use in potential future studies. To request access to the data for reproducibility purposes, please contact Dr. Anton Béguin (anton.beguin@ibo.org), Director of Educational Innovation at the IBO. Requests will be reviewed on a case-by-case basis.
+As part of the data privacy policy of the IBO, the data used for the project is not made available here, although it remains stored in the International Baccalaureate records. Instead, only the code in R and Fortran is provided for use in potential future studies. To request access to the data for reproducibility purposes, please contact Dr. Anton Béguin (anton@toetsinnovatie.nl), fomrmer Director of Educational Innovation at the IBO. Requests will be reviewed on a case-by-case basis.
 
 Requests should be made for the following datasets, that should be placed within the three subfolders in [A. Data](A.%20Data):
 
