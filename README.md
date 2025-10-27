@@ -19,7 +19,7 @@ The original structure of the project is maintained with empty folders to facili
 
 # Data
 
-As part of the data privacy policy of the IBO, the data used for the project is not made available here, although it remains stored in the International Baccalaureate records. Instead, only the code in R and Fortran is provided for use in potential future studies. To request access to the data for reproducibility purposes, please contact Dr. Anton Béguin (anton@toetsinnovatie.nl), fomrmer Director of Educational Innovation at the IBO. Requests will be reviewed on a case-by-case basis.
+As part of the data privacy policy of the IBO, the data used for the project is not made available here, although it remains stored in the International Baccalaureate records. Instead, only the code in R and Fortran is provided for use in potential future studies. To request access to the data for reproducibility purposes, please contact Dr. Anton Béguin (anton@toetsinnovatie.nl), former Director of Educational Innovation at the IBO. Requests will be reviewed on a case-by-case basis.
 
 Requests should be made for the following datasets, that should be placed within the three subfolders in [A. Data](A.%20Data):
 
